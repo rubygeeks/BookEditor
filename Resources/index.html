@@ -2,19 +2,15 @@
 <html>
   <head>
     <title>BookEditor</title>
-<style type="text/css">
-textarea#styled {
-        width: 600px;
-        height: 120px;
-        border: 3px solid #cccccc;
-        padding: 5px;
-
-}
-</style>
+    <link rel="stylesheet" href="app://stylesheets/application.css" type="text/css" media="screen">
+    <script type="text/javascript" src="app://menu.js"></script>
   </head>
   <body>
+	<nav id="buttons">
+      <input type="button" id="clear" value="Clear Editor" onclick="cleartextarea();" >
+    </nav>
     <textarea id="styled"></textarea>
-<div class="wmd-preview"></div>
-    <script type="text/javascript" src="wmd/wmd.js"></script>
+<div class="wmd-preview" id="preview"></div>
+    <script type="text/javascript" src="app://wmd/wmd.js"></script>
   </body>
 </html>
